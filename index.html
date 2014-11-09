@@ -83,6 +83,26 @@
 	.footer a {
 		color: #ce0000;
 	}
+	.pull-left {
+		float: left;
+	}
+	.pull-right {
+		float: right;
+	}
+	.clearfix {
+		clear: both;
+	}
+	.social-links {
+		text-align: center;
+		margin-bottom: 16px;
+	}
+	.social-links > div {
+		display: inline-block;
+	}
+	.social-links > .github {
+		margin-left: 24px;
+		margin-right: 24px;
+	}
   </style>
 
 </head>
@@ -103,10 +123,32 @@
 
 			<div class="footer">
 				<div class="wrapper">
+
+					<div class="social-links">
+						<div class="google">
+							<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/102723596105240966780" data-rel="publisher"></div>
+							<!-- <div class="g-plus" data-action="share" data-href="http://angularify.org"></div> -->
+						</div>
+
+						<div class="github">
+							<iframe src="http://ghbtns.com/github-btn.html?user=angularifyjs&type=follow&count=false"
+		  allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+						</div>
+
+						<div class="twitter-follow">
+							<a class="twitter-follow-button" href="https://twitter.com/angularify" data-show-count="true" data-lang="en">Follow @angularify</a>
+						</div>
+
+						<div class="twitter-tweet">
+							<a class="twitter-share-button" data-url="http://angularify.org" data-via="angularify" href="https://twitter.com/share">Tweet</a>
+						</div>
+					</div>
+
 					<div class="desc">
 						<span>If you want to contribute your works as a team, feel free to drop us a line</span>
 						<a href="mailto:hello@angularify.org">hello@angularify.org</a>
 					</div>
+
 					<div class="copyright">© 2014 Angularify.org</div>
 				</div>
 			</div>
@@ -125,6 +167,19 @@
 	  ga('create', 'UA-56551126-1', 'auto');
 	  ga('send', 'pageview');
 
+	</script>
+
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+	<script type="text/javascript">
+	window.twttr = (function (d, s, id) {
+	  var t, js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src= "https://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+	}(document, "script", "twitter-wjs"));
 	</script>
 
 </body>
