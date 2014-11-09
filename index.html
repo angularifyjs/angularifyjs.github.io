@@ -119,7 +119,7 @@
 				<div class="subtitle">Built for community and by community</div>
 			</h2>
 
-			<a class="explore" href="https://github.com/angularifyjs">Explore Now!</a>
+			<a class="explore" href="https://github.com/angularifyjs" onclick="sendEvent();">Explore Now!</a>
 
 			<div class="footer">
 				<div class="wrapper">
@@ -180,6 +180,12 @@
 	  fjs.parentNode.insertBefore(js, fjs);
 	  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
 	}(document, "script", "twitter-wjs"));
+	</script>
+
+	<script type="text/javascript">
+	var sendEvent = function(label) {
+		ga('send', 'event', 'landing-page', 'click', label);
+	};
 	</script>
 
 </body>
